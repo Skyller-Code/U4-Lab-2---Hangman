@@ -9,11 +9,17 @@ const phrases = ["the factory must grow", "web programming", "the honored one", 
 
 //const ran = Math.floor(Math.random() * 10);
 
-phrase = phrases[Math.floor(Math.random() * 10)];
-console.log(phrase)
-const body = document.getElementsByTagName("body")[0];
-console.log(body)
-for(let lett = 0; lett > phrase.length; lett++)
+const phrase = phrases[Math.floor(Math.random() * 10)];
+console.log(phrase);
+console.log(phrase.length);
+const display = document.getElementById("hidden-word");
+console.log(display);
+for(let lett = 0; lett < phrase.length; lett++)
 {
-    console.log(lett)
+    
+    console.log(phrase[lett]);
+    const disLet = document.createElement("h2");
+    disLet.textContent = phrase[lett]
+    display.appendChild(disLet);
+    
 }
