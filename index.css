@@ -1,0 +1,24 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    height: 5vh;
+    width: 50vw;
+    color: white;
+    text-align: center;
+    margin-top: 65px;
+}
+
+#hanger {
+    margin: 50px 0px;
+    padding: 40px;
+    height: 35vh;
+    border: black solid 6.7px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
