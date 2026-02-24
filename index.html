@@ -9,18 +9,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bonheur+Royale&display=swap" rel="stylesheet">
         <title>Hangman</title>
     </head>
 
     <body>
-        <div id="header"><h1>Hangman Game</h1></div>
+        <a href="pages/SDP/U4_Lab2_SDP.html">SDP</a>
+        <div id="header" class="font"><h1>The Hangiest Man</h1></div>
         <div id="hanger">
             Imagine there is a guy here.
         </div>
         <div id="inp-box">
-            <label for="guess">Enter your letter guess</label>
+            <label class="font" for="guess">Enter your letter guess</label>
             <input type="text" id="guess" name="guess" maxlength="1" minlength="1">
-            <button id="submit" onclick = "read()">Submit</button>
+            <button id="submit" class="font" onclick = "read()">Submit</button>
         </div>
 
         <script src = "index.js"></script>
