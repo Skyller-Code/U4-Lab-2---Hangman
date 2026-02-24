@@ -1,0 +1,59 @@
+# 2. Hangman
+
+---
+
+### Task
+
+You and your partner will be making a web version of the game Hangman. Your game must allow the user to enter letters, win if they finish the phrase or lose if they hang the man.
+
+---
+
+### Requirements
+
+- Every Project:
+    - Push completed work to a new GitHub repo - name appropriately
+    - Use proper filesystem organization
+    - Include all required elements in index.html
+    - Include a proper heading
+    - Give your page an appropriate title (title tag)
+- Must include the hangman board that changes to add body parts for every invalid guess
+- Must show the hidden phrase and add letters as the player guesses them correctly
+- The user should be able to play again - have a MINIMUM of 10 phrases that are randomly chosen from
+- The work should be evenly divided between the two partners. The final product will be graded as a unit so make sure you and your partner are communicating and helping each other out.
+
+---
+
+### Professional Website Requirements
+
+- **Color**
+    - Color choices are used carefully to highlight important information.
+    - If multiple colors are used, these colors are chosen with care so that the resulting visuals are clear and all elements are readable and are easy to look at.
+    - Avoid using exclusively bright colors.  Not all page elements need to be something other than black or white.
+- **Text & Font**
+    - Written information is clear and grammatically correct
+    - Font choice prioritizes readability
+    - Font sizes and colors are appropriate and make the content easy to read
+    - Important information is easily identified using text modifications (bold, italics, color change, etc)
+- **Images & Resources**
+    - Additional page elements (like images) add value to the page and are chosen thoughtfully
+    - Images have a clear purpose and are positioned on the page in a meaningful way
+    - Images have a proper alt text value
+    - Images are properly stored and organized by page in the “resources” folder in the file tree
+- **Links**
+    - Clickable items (text links or images) are clearly identified
+    - External resources are chosen thoughtfully and make sense in the context of the page
+    - Internal page links allow the user to navigate throughout your website. Each internal page is organized in the “pages” folder in the file tree.
+- **Inspect**
+    - The console should not show any text or testing outputs. Users can have access to this information and it is not safe or professional for them to see it.
+
+---
+
+### SDP
+
+Create a new file called “U4_Lab2_SDP.html”. Store this HTML page in the “pages” folder, in a folder named “SDP”.  Include a link to your SDP page somewhere in index.html.  Record your responses to the following questions.  Answer each question thoroughly and with full and complete sentences. Please make sure that all questions appear on different lines on the web page.
+
+There are no questions for you to answer for this lab. Instead, document the responsibilities of both partners including:
+
+- Name
+- front-end or back-end
+- What components each partner worked on/completed
