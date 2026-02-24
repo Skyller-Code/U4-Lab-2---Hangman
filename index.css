@@ -17,6 +17,17 @@
     border: #134E8E solid 6.7px;
 }
 
+#hidden-word {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF4400;
+    width: 50vw;
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+}
+
 .font {
   font-family: "Archivo Black", sans-serif;
   font-weight: 400;
