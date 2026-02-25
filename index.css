@@ -12,9 +12,37 @@
 
 #hanger {
     margin: 50px 0px;
-    padding: 40px;
-    height: 35vh;
+    padding: 30px;
     border: #134E8E solid 6.7px;
+    
+}
+
+#hanger-img {
+    width: 470px;
+    height: 380px;
+    object-fit: cover;
+}
+
+#alert-box {
+    top: 25vh;
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: rgb(42, 96, 245);
+
+    text-align: center;
+    font-size: 90px;
+
+    opacity: 0;
+    transition-duration: 1s;
+
+    pointer-events: none;
 }
 
 #hidden-word {
