@@ -24,41 +24,6 @@ function createPlayAgain () {
     }
 }
 
-/*
-const phrases = ["the factory must grow", "web programming", "the honored one", "fire and ice", "space elevator", "quantum physics", "hello world", "trains are the best", "binary trees", "afternoon is the best"];
-
-const phrase = phrases[Math.floor(Math.random() * 10)];
-console.log(phrase);
-console.log(phrase.length);
-const display = document.getElementById("hidden-word");
-console.log(display);
-const dashes = [];
-for(let lett = 0; lett < phrase.length; lett++)
-{
-    console.log(phrase[lett]);
-    if(phrase[lett] == " ")
-    {
-        console.log("space")
-        dashes.push(" ")
-    }
-    else
-    {
-        console.log("blank")
-        dashes.push("_")
-    }
-}
-console.log(dashes);
-display.textContent = dashes.join("");
-console.log(display.textContent);
-
-for(let char = 0; char < phrase.length; char++)
-{
-    dashes[char] = phrase[char];
-    display.textContent = dashes.join("");
-}
-console.log(dashes, "dashes");
-*/
-
 const phrases = ["the factory must grow", "web programming", "the honored one", "fire and ice", "space elevator", "quantum physics", "hello world", "trains are the best", "binary trees", "afternoon is the best"];
 const phrase = phrases[Math.floor(Math.random() * 10)];
 console.log(phrase);
@@ -87,22 +52,23 @@ function plaDas() //stands for place dashes
 */
 
 const display = document.getElementById("hidden-word");
+//the list of dashes exists, because the textContent can't be changed one character at a time
+//so this changes one character at a time, then makes textContent equal the list as a string
 const dashes = [];
-
+//this for loop is global because the list of dashes has to be global
 for(let lett = 0; lett < phrase.length; lett++)
 {
     if(phrase[lett] == " ")
     {
-        display.textContent += " ";
         dashes.push(" ");
     }
     else
     {
         dashes.push("_");
-        display.textContent += "_";
     }
 }
 console.log(dashes);
+display.textContent = dashes.join("");
 
 
 function check()
@@ -125,4 +91,3 @@ function check()
 
     console.log(display.textContent);
 }
-
