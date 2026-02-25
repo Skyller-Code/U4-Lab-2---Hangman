@@ -7,8 +7,8 @@ function vineBoom() {
         document.getElementById("alert-box").style.transitionDuration = "1s";
         document.getElementById("alert-box").style.opacity = 0;
     },750);
-    /*const audio = new Audio("resources/index/vine-boom.mp3");
-    audio.play();*/
+    const audio = new Audio("resources/index/vine-boom.mp3");
+    audio.play();
 }
 
 
