@@ -12,6 +12,18 @@ function vineBoom() {
 }
 
 
+function createPlayAgain () {
+    const playAgain = document.createElement("button");
+    playAgain.textContent = "Play Again?";
+    playAgain.classList.add("font");
+    playAgain.id = "play-again";
+    document.body.appendChild(playAgain);
+
+    playAgain.onclick = function() {
+        location.reload();
+    }
+}
+
 /*
 const phrases = ["the factory must grow", "web programming", "the honored one", "fire and ice", "space elevator", "quantum physics", "hello world", "trains are the best", "binary trees", "afternoon is the best"];
 

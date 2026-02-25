@@ -23,6 +23,23 @@
     object-fit: cover;
 }
 
+#play-again {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF4400;
+    width: 50vw;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+
+    cursor: pointer;
+
+    transition-duration: 0.22s;
+}
+
 #alert-box {
     top: 25vh;
     position: fixed;
