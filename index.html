@@ -30,13 +30,13 @@
         <div id="inp-box">
             <label class="font" for="guess">Enter your letter guess</label>
             <input type="text" id="guess" name="guess" maxlength="1" minlength="1">
-            <button id="submit" class="font" onclick = "check()">Submit</button>
+            <input type="button" id="submit" class="font" onclick = "check()" value="Submit">
         </div>
 
         <!-- Supposed to flash an alert at user when they get a letter wrong -->
         <div id="alert-box" class="font">
             <p>YOU HAVE</p>
-            <p id="tries-left">10</p>
+            <p id="chances">6</p>
             <p>MORE TRIES LEFT!</p>
         </div>
 

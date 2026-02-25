@@ -11,7 +11,6 @@ function vineBoom() {
     audio.play();
 }
 
-
 function createPlayAgain () {
     const playAgain = document.createElement("button");
     playAgain.textContent = "Play Again?";
@@ -22,6 +21,13 @@ function createPlayAgain () {
     playAgain.onclick = function() {
         location.reload();
     }
+}
+
+function decreaseChances() {
+    const chances = document.getElementById("chances");
+
+    chances.textContent = parseInt(chances.textContent) - 1;
+    document.getElementById("hanger-img").src = "resources/index/stage" + (6 - parseInt(chances.textContent)) + ".png";
 }
 
 const phrases = ["the factory must grow", "web programming", "the honored one", "fire and ice", "space elevator", "quantum physics", "hello world", "trains are the best", "binary trees", "afternoon is the best"];
@@ -76,17 +82,29 @@ function check()
     const input = document.getElementById("guess").value;
     console.log(input);
 
-    for(let char = 0; char < phrase.length; char++)
+    if (phrase.includes(input)) {
+        for (let char = 0; char < phrase.length; char++)
+        {
+            if(phrase[char] == input)
+            {
+                dashes[char] = input;
+                display.textContent = dashes.join("");
+            }
+        }
+    }
+
+    else {
+        decreaseChances();
+        vineBoom();
+    }
+
+    document.getElementById("guess").value = "";
+
+    if (!dashes.includes("_") || parseInt(document.getElementById("chances").textContent) <= 0)
     {
-        if(phrase[char] == input)
-        {
-            dashes[char] = input;
-            display.textContent = dashes.join("");
-        }
-        else
-        {
-            vineBoom();
-        }
+        createPlayAgain();
+        document.getElementById("submit").disabled = true;
+        document.getElementById("guess").disabled = true;
     }
 
     console.log(display.textContent);
