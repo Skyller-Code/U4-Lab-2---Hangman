@@ -18,8 +18,9 @@
     <body>
         <a href="pages/SDP/U4_Lab2_SDP.html">SDP</a>
         <div id="header" class="font"><h1>The Hangiest Man</h1></div>
+
         <div id="hanger">
-            Imagine there is a guy here.
+            <img id="hanger-img" src="resources/index/base.png" alt="image of the base of the hangman, you have 7 more tries">
         </div>
 
         <div id="hidden-word"> <!--This is where the word will be displayed, with blanks for the letters that haven't been guessed yet.-->
@@ -31,6 +32,15 @@
             <input type="text" id="guess" name="guess" maxlength="1" minlength="1">
             <button id="submit" class="font" onclick = "read()">Submit</button>
         </div>
+
+        <!-- Supposed to flash an alert at user when they get a letter wrong -->
+        <div id="alert-box" class="font">
+            <p>YOU HAVE</p>
+            <p id="tries-left">10</p>
+            <p>MORE TRIES LEFT!</p>
+        </div>
+
+        <button id="vine-boom" class="font" onclick="hawktuah()">Vine boom sfx</button>
 
         <script src = "index.js"></script>
     </body>

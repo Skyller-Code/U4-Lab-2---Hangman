@@ -3,6 +3,18 @@ function read()
 {
     const input = document.getElementById("guess").value;
     console.log(input);
+}``
+
+function hawktuah() {
+
+    document.getElementById("alert-box").style.transitionDuration = "0s";
+    document.getElementById("alert-box").style.opacity = 1;
+    setTimeout(() => {
+        document.getElementById("alert-box").style.transitionDuration = "1s";
+        document.getElementById("alert-box").style.opacity = 0;
+    },750);
+    /*const audio = new Audio("resources/index/vine-boom.mp3");
+    audio.play();*/
 }
 
 const phrases = ["the factory must grow", "web programming", "the honored one", "fire and ice", "space elevator", "quantum physics", "hello world", "trains are the best", "binary trees", "afternoon is the best"];
