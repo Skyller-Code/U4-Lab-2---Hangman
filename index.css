@@ -80,8 +80,9 @@
 
 #guessed-letters {
     color: #134E8E;
-    border-color: #C00707;
+    border: #C00707 solid 6.7px;
     font-size: 25px;
+    margin-bottom: 50px;
     padding: 15px;
 }
 
