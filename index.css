@@ -77,6 +77,16 @@
     font-family: "IBM Plex Mono", monospace;
 }
 
+#win-text {
+    color: rgb(0, 100, 0);
+    margin-top: 50px;
+}
+
+#loser-text {
+    color: rgb(100, 0, 0);
+    margin-top: 50px;
+}
+
 #submit {
     transition-duration: 0.22s;
     cursor: pointer;
