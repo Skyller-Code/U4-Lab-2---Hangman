@@ -77,7 +77,7 @@ function check() //checks if a guessed letter is in the phrase
     const input = document.getElementById("guess").value.toLowerCase();
     const asciiNumb = input.charCodeAt(0);
 
-    if ((asciiNumb < 97 || asciiNumb > 122))
+    if ((asciiNumb < 97 || asciiNumb > 122) || document.getElementById("guessed-letters").textContent.includes(input, 16)) //if the input is not a lowercase letter, or if the letter has already been guessed, do nothing
     {   
         document.getElementById("guess").value = "";
         return;
@@ -97,9 +97,9 @@ function check() //checks if a guessed letter is in the phrase
     else {
         decreaseChances();
         vineBoom();
-        document.getElementById("guessed-letters").textContent += ` ${input}`; //adds the the display list of failed guesses
     }
 
+    document.getElementById("guessed-letters").textContent += ` ${input}`; //adds the the display list of failed guesses
     document.getElementById("guess").value = "";
 
     if (!dashes.includes("_")) //end game if there are no more dashes, meaning the phrase has been fully guessed
