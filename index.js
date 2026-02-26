@@ -34,7 +34,7 @@ const phrases = ["the factory must grow", "web programming", "the honored one", 
 const phrase = phrases[Math.floor(Math.random() * 10)];
 console.log(phrase);
 
-function plaDas() //maybe i sholud change this
+function makDas() //stands for make dashes
 {
     const temp = [];
     for(let lett = 0; lett < phrase.length; lett++)
@@ -50,17 +50,13 @@ function plaDas() //maybe i sholud change this
     }
     return temp;
 }
-//last left off putting the adding to the list of dashes to a function
-//donovan didn't pull the last save
-//next: add a replay ability
-
 //the list of dashes exists, because the textContent can't be changed one character at a time
 //so this changes one character at a time, then makes textContent equal the list as a string
 const dashes = plaDas();
 const display = document.getElementById("hidden-word");
-display.textContent = dashes.join("");
+display.textContent = dashes.join(""); //converts the list of dashes into a string
 
-function check()
+function check() //checks if a guessed letter is in the phrase
 {
     const input = document.getElementById("guess").value;
     console.log(input);
