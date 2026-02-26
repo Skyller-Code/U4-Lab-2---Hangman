@@ -1,6 +1,5 @@
 
 function vineBoom() {
-
     document.getElementById("alert-box").style.transitionDuration = "0s";
     document.getElementById("alert-box").style.opacity = 1;
     setTimeout(() => {
@@ -48,7 +47,6 @@ function createLoserText() {
 
 const phrases = ["the factory must grow", "web programming", "the honored one", "fire and ice", "space elevator", "quantum physics", "hello world", "trains are the best", "binary trees", "afternoon is the best"];
 const phrase = phrases[Math.floor(Math.random() * 10)];
-console.log(phrase);
 
 function makDas() //stands for make dashes
 {
@@ -77,7 +75,7 @@ function check() //checks if a guessed letter is in the phrase
     const input = document.getElementById("guess").value.toLowerCase();
     const asciiNumb = input.charCodeAt(0);
 
-    if ((asciiNumb < 97 || asciiNumb > 122) || document.getElementById("guessed-letters").textContent.includes(input, 16)) //if the input is not a lowercase letter, or if the letter has already been guessed, do nothing
+    if ((asciiNumb < 97 || asciiNumb > 122) || document.getElementById("guessed-letters").textContent.includes(input, 16)) //if the input is not a letter, or if the letter has already been guessed, do nothing
     {   
         document.getElementById("guess").value = "";
         return;
@@ -118,6 +116,4 @@ function check() //checks if a guessed letter is in the phrase
         document.getElementById("submit").disabled = true;
         document.getElementById("guess").disabled = true;
     }
-
-    console.log(display.textContent);
 }
