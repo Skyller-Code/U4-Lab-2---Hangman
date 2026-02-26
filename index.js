@@ -32,7 +32,7 @@ function decreaseChances() {
 
 const phrases = ["the factory must grow", "web programming", "the honored one", "fire and ice", "space elevator", "quantum physics", "hello world", "trains are the best", "binary trees", "afternoon is the best"];
 const phrase = phrases[Math.floor(Math.random() * 10)];
-console.log(phrase);
+//console.log(phrase);
 
 function makDas() //stands for make dashes
 {
@@ -59,8 +59,6 @@ display.textContent = dashes.join(""); //converts the list of dashes into a stri
 function check() //checks if a guessed letter is in the phrase
 {
     const input = document.getElementById("guess").value;
-    console.log(input);
-
     if (phrase.includes(input)) {
         for (let char = 0; char < phrase.length; char++)
         {
