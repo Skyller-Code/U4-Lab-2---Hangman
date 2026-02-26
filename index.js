@@ -71,7 +71,7 @@ function makDas() //stands for make dashes
 const dashes = makDas();
 const display = document.getElementById("hidden-word");
 display.textContent = dashes.join(""); //converts the list of dashes into a string
-const faiGue = []; //stands for failed guesses
+
 function check() //checks if a guessed letter is in the phrase
 {   
     const input = document.getElementById("guess").value.toLowerCase();
@@ -97,7 +97,7 @@ function check() //checks if a guessed letter is in the phrase
     else {
         decreaseChances();
         vineBoom();
-        faiGue.push(input); //adds the wrong guess to the list of failed guesses
+        document.getElementById("guessed-letters").textContent += ` ${input}`; //adds the the display list of failed guesses
     }
 
     document.getElementById("guess").value = "";
