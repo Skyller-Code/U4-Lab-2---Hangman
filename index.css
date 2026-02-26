@@ -55,6 +55,7 @@
     flex-direction: column;
 
     color: rgb(42, 96, 245);
+    background-image: url("resources/index/bwah.jpg");
 
     text-align: center;
     font-size: 90px;
@@ -75,6 +76,13 @@
     color: white;
     text-align: center;
     font-family: "IBM Plex Mono", monospace;
+}
+
+#guessed-letters {
+    color: #134E8E;
+    border-color: #C00707;
+    font-size: 25px;
+    padding: 15px;
 }
 
 #win-text {
