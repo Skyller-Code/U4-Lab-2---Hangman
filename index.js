@@ -52,7 +52,7 @@ function makDas() //stands for make dashes
 }
 //the list of dashes exists, because the textContent can't be changed one character at a time
 //so this changes one character at a time, then makes textContent equal the list as a string
-const dashes = plaDas();
+const dashes = makDas();
 const display = document.getElementById("hidden-word");
 display.textContent = dashes.join(""); //converts the list of dashes into a string
 
